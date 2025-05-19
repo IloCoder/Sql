@@ -1,0 +1,83 @@
+Microsoft SQL Server kullanarak, 
+"Sample Retail" database'i için aşağıda belirttiğim konu başlıkları altında 20 tane soru hazırla. Cevaplarını da yaz.
+Sorular intermediate seviye olsun. 
+Database'deki tablo ve sütun isimleri şu şekildedir: 
+Tablo ve sütun isimleri: 
+
+[product].[brand] tablosu 
+[brand_id] (primary key) 
+[brand_name] 
+
+[product].[category] tablosu 
+[category_id] (primary key) 
+[category_name] 
+
+[product].[product] tablosu 
+[product_id] (primary key) 
+[product_name] 
+[brand_id] (foreign key) 
+[category_id] (foreign key) 
+[model_year] 
+[list_price] 
+
+[product].[stock] tablosu 
+[store_id] (primary key) (foreign key) 
+[product_id] (primary key) (foreign key) 
+[quantity] 
+
+[sale].[customer] tablosu 
+[customer_id] (parimary key) 
+[first_name] 
+[last_name] 
+[phone] 
+[email] 
+[street] 
+[city] 
+[state] 
+[zip_code] 
+
+[sale].[order_item] tablosu 
+[order_id] (primary key) (foreign key) 
+[item_id] (parimary key) 
+[product_id] (foreign key) 
+[quantity] 
+[list_price] 
+[discount] 
+
+[sale].[orders] tablosu 
+[order_id] (primary key)  
+[customer_id] (foreign key) 
+[order_status] 
+[order_date] 
+[required_date] 
+[shipped_date] 
+[store_id] (foreign key) 
+[staff_id] (foreign key) 
+
+[sale].[staff] tablosu 
+[staff_id] (primary key)  
+[first_name] 
+[last_name] 
+[email] 
+[phone] 
+[active] 
+[store_id] (foreign key) 
+[manager_id] (foreign key) 
+
+[sale].[store] tablosu 
+[store_id] (primary key)  
+[store_name] 
+[phone] 
+[email] 
+[street] 
+[city] 
+[state] 
+[zip_code] 
+
+Konu başlıkları: 
+
+1. Joins & Views 
+2. Advanced Grouping Operations 
+3. SET Operations & CASE Statements
+4. Subqueries & CTE_s 
+5. Windows Functions
